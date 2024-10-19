@@ -1,0 +1,33 @@
+
+    <script src="../../js/gallery.js"></script>
+    <script src="../js/lightbox.min.js"></script>
+    
+    <link href="../../css/lightbox.css" rel="stylesheet" />
+        <div class="intro">
+            <div>
+              <span id=title>ギャラリー</span>
+              <a href="/fruit"><span id="menu">果物・野菜</span></a>
+              <a href="/soap"><span>石鹸</span></a>
+              <a href="/wood"><span>木工</span></a>
+            </div>
+            <p>作品の画像をクリックすると拡大します。</p>
+        </div>
+        
+        <div id="image-thumbs">
+            <!-- images loaded from gallery.js -->
+             
+        </div>
+        
+        <script>
+            // console.log("wtf?")
+            // document.addEventListener('document.ready', function() {
+            //     console.log('The page has loaded!');
+            //     loadGallery('fruit');
+            // });
+            // const test = `<%= images %>`
+            // console.log('medium: ' + `<%= medium %>`)
+            Window.onload = loadGallery(`<%= medium %>`, `<%= images %>`);
+                
+            
+        </script>
+    

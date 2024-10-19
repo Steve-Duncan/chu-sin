@@ -1,0 +1,52 @@
+<section class="info">
+            <p>
+              <span class="title"
+                >洛北阪急スクエアにてソープカービング講座開講</span
+              >（2024.3.30更新）
+            </p>
+
+            <p>
+              京都洛北に新しくオープンした "JEUGIAカルチャーセンター"
+              にて、ソープカービング講座を担当することになりました。
+            </p>
+
+            <p>
+              初めての方も経験者もそれぞれに合わせてレッスン内容をご用意いたしますので、この機会にぜひお気軽にご参加ください。
+            </p>
+
+            <p>
+              オープン記念特典で5月末まで入会金半額、ご受講料も通常の10%オフです。
+            </p>
+
+            <p>
+              会　場 : 洛北阪急スクエア2階  (京都市左京区)<br />
+              日　程 : 毎月第4金曜日　10:30〜12:30<br />
+              受講料 : 3,850円／1回　材料費220円〜<br />
+              　※4/26(金)、5/24(金)はご受講料10%オフ
+            </p>
+
+            <p>体験時ナイフ貸出し可</p>
+
+            <p>お申込み・お問合せ : 　電話　075-705-0131 </p>
+
+            <p>
+              詳しくはこちらをクリック↓<br />
+              <a
+                href="https://culture.jeugia.co.jp/lesson_detail_70-54732.html"
+                target="_blank"
+                ><strong>JEUGIAカルチャーセンター洛北阪急スクエア</strong></a
+              >
+            </p>
+            </section>
+            <section class="pics">
+                <a href="images/240330_1.jpg" data-lightbox="1" title=""
+                ><img src="images/240330_1_1.jpg"
+                /></a>
+                <a href="images/240330_2.jpg" data-lightbox="2" title=""
+                ><img src="images/240330_2_1.jpg"
+                /></a>
+                <a href="images/240330_3.jpg" data-lightbox="3" title=""
+                ><img src="images/240330_3_1.jpg"
+                /></a>
+            </section>
+        </div>

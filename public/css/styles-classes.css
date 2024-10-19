@@ -1,0 +1,379 @@
+@import url("styles-template.css");
+@import url("class-info.css");
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+    color: black;
+}
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+}
+.header {
+    width: 100%;
+}
+section {
+    overflow:auto;
+}
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-rows:  repeat(auto, auto-fit);
+    margin: 0 auto;
+    color:black;
+    grid-template-areas:
+        "classInfo classInfo classInfo"
+        "kita kita kita"
+        "asahi asahi asahi"
+        "jeugia jeugia jeugia"
+        "fukui-wed fukui-wed fukui-wed"
+        "fukui-news fukui-news fukui-news"
+        "sabae sabae sabae";
+        
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+.classroomInfo {
+    grid-area: classInfo;
+    font-size: 12px;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    h3 {
+        padding-top: 3.3rem;
+        padding-bottom:3rem;
+        font-size: 1.6rem;
+    }
+    :nth-child(n+2) {
+        font-size: 1.2rem;
+        padding-top: .1rem;
+        line-height: 2em;
+    }
+}
+.courseInfo {
+    grid-area: info;
+    font-size: 12px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    line-height: 1.75em;
+}
+.footer {
+    color: white;
+}
+
+/* **************** styles for calendar grid ************************************ */
+.grid {
+    align-content: start;
+    padding-top: 1.8rem;
+    display: grid;
+    grid-template-columns: repeat(7, minmax(auto, 2.35rem));
+    grid-template-rows:  repeat(8, minmax(auto, 2.35rem)); 
+
+    grid-template-areas:
+        "date date date date date date date"
+        "cal cal cal cal cal cal cal"
+        "cal cal cal cal cal cal cal"
+        "cal cal cal cal cal cal cal"
+        "cal cal cal cal cal cal cal"
+        "cal cal cal cal cal cal cal"
+        "cal cal cal cal cal cal cal"
+        "cal cal cal cal cal cal cal"
+        "note note note note note note note";
+    
+    .head, .cell {
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    & .classDate, .classDay {
+        background-color: orange;
+    } 
+    & .date {
+        grid-area: date;
+        display: flex;
+        align-items: flex-end;
+        font-size: 11px;
+
+    }
+    & .note {
+        grid-area: note;
+        font-size: 11px;
+        font-weight: bold;
+        color: red;
+    }
+     & .noteUp {
+        grid-row-start: 8;
+    }
+}
+/* ************* end styles for calendar grid ********************************************* */
+
+.venue {
+    display: grid;
+    grid-template-columns: auto-fit repeat(3, auto);
+    grid-template-rows: 3.5rem 11.5rem repeat(10, auto-fill);
+    font-family: Arial, Helvetica, sans-serif;  
+    font-size: 14px;
+    margin-top: 5rem;
+    padding-bottom: 2.5rem;
+    border: 1px solid black;
+
+    .location {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        height: 3.5rem;
+        font-size: 12px;
+        white-space: pre;
+        border-bottom: 1px solid black;
+        background-color: lightgray;
+        padding-left: .5rem;
+        grid-area: location;
+        
+        & em {
+            font-size:11px;
+            font-style: normal;
+        }
+    }
+    .grid-wrap {
+        display: grid;
+        grid-template-columns: 190px auto;
+        justify-content: space-around;
+        width: 100%;
+
+        & .days {
+            grid-area: days;
+            padding-top: 1.5rem;
+        }
+        > .times {
+            grid-area: times;
+        }
+    }
+}
+.kyoto-kita {
+    grid-area: kita;
+    grid-template-areas:
+        "location location"
+        "cal-Thu cal-Thu"
+        "cal-Fri cal-Fri"
+        "cal-Sat cal-Sat"
+        "info info";
+        
+    #cal-木 {
+        grid-area: cal-Thu;
+        padding-top: .5rem;
+        grid-template-areas:
+            "days times"
+            "cal-1 cal-2";
+    }
+    .cal-2 {
+        grid-area: cal-2;
+    }
+
+    #cal-金 {
+        grid-area: cal-Fri;
+        padding-top: 5.5rem;
+        grid-template-areas:
+            "days times"
+            "cal-1 cal-2";
+        .cal-1 {
+            grid-area: cal-1;
+        }
+    
+        .cal-2 {
+            grid-area: cal-2;
+        }
+    }
+
+    #cal-土 {
+        grid-area: cal-Sat;
+        padding-top: 3rem;
+        grid-template-areas:
+            "days times"
+            "cal-1 cal-2";
+        .cal-1 {
+            grid-area: cal-1;
+        }
+        .cal-2 {
+            grid-area: cal-2;
+        }
+    }
+}
+
+.kyoto-asahi {
+    grid-area: asahi;
+    grid-template-areas:
+        "location location"
+        "cal-Sat cal-Sat"
+        "info info";
+        
+    #cal-3土 {
+        grid-area: cal-Sat;
+        grid-template-areas:
+            "days times"
+            "cal-1 cal-2";
+    }
+}
+.kyoto-jeugia {
+    grid-area: jeugia;
+    grid-template-areas:
+        "location location"
+        "cal-Fri cal-Fri"
+        "info info";
+    #cal-2金 {
+        grid-area: cal-Fri;
+        grid-template-areas:
+            "days times"
+            "cal-1 cal-2";
+
+            .cal-2 {
+                grid-area: cal-2;
+            }
+    }
+}
+
+.fukui-wed {
+    grid-area: fukui-wed;
+    grid-template-areas:
+        "location location"
+        "cal-Wed cal-Wed"
+        "info info";
+    
+    .location {
+        display: grid;
+        height: 5.5rem;
+        grid-template-rows: repeat(2, auto-fit);
+        grid-template-columns: 1fr 3fr;
+        align-items: center;
+        
+        >.sp1{
+            grid-row: 1 / span 2;
+            }
+        >.sp2{
+            grid-column-start: 2;}
+        >.sp3{
+            grid-row-start: 2;
+            grid-column-start: 2;
+        }
+    }
+
+    #cal-水 {
+        grid-area: cal-Wed;
+        grid-template-areas:
+            "days times"
+            "cal-1 cal-2";
+
+            .cal-2 {
+            grid-area: cal-2;
+        }
+    }
+}
+
+.fukui-newspaper {
+    grid-area: fukui-news;
+    grid-template-areas:
+        "location location"
+        "cal-Tue cal-Tue"
+        "info info";
+    
+    #cal-火 {
+        grid-area: cal-Tue;
+        grid-template-areas:
+            "days times"
+            "cal-1 cal-2";
+
+            .cal-2 {
+                grid-area: cal-2;
+            }
+    }
+}
+
+.fukui-sabae {
+    grid-area: sabae;
+    grid-template-areas:
+        "location location"
+        "cal-Mon cal-Mon"
+        "info info";
+    
+    #cal-月 {
+        grid-area: cal-Mon;
+        grid-template-areas:
+            "days times"
+            "cal-1 cal-2";
+            .cal-1 {
+                grid-area: cal-1;
+            }
+            .cal-2 {
+                grid-area: cal-2;
+            }
+    }
+}
+
+
+
+/****************** rules below here apply to all areas ***************/
+.right {
+    padding-left: 52%;
+    /* color:crimson */
+}
+/* ***************************************************************** */
+/* ********************* media queries *******************************/
+/* ***************************************************************** */
+
+@media screen and (max-width: 900px) {
+    .main-content {
+        padding: 0 .5rem;
+    }
+}
+
+@media screen and (min-width: 760px) {
+    .courseInfo {
+        padding-left: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 1;
+        padding-bottom: 2rem;
+    }
+    .venue .grid-wrap {
+        justify-content: start;
+        padding-left: 2rem;
+        padding-bottom: 1rem;
+    }
+    .kyoto-kita {
+        grid-template-areas:
+        "location location location"
+        "cal-Thu cal-Thu info"
+        "cal-Fri cal-Fri ."
+        "cal-Sat cal-Sat .";
+    }
+    .kyoto-asahi {
+        grid-template-areas:
+        "location location location"
+        "cal-Sat cal-Sat info";
+    }
+    .kyoto-jeugia {
+        grid-template-areas:
+        "location location location"
+        "cal-Fri cal-Fri info";
+    }
+    .fukui-wed {
+        grid-template-areas:
+        "location location location"
+        "cal-Wed cal-Wed info";
+    }
+    .fukui-newspaper {
+        grid-template-areas:
+        "location location location"
+        "cal-Tue cal-Tue info";
+    }
+    .fukui-sabae {
+        grid-template-areas:
+        "location location location"
+        "cal-Mon cal-Mon info";
+    }       
+}
+
