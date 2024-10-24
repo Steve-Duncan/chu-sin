@@ -16,8 +16,5 @@
     "nodemon": "^3.1.7",
     "serve-favicon": "^2.5.0"
   },
-  "main": "app.js",
-  "devDependencies": {
-    "@flydotio/dockerfile": "^0.5.9"
-  }
+  "main": "app.js"
 }
