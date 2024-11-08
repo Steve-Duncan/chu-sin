@@ -1,10 +1,16 @@
 
 function loadGallery(medium, images) {
+
+    console.log(images);
     // images import as comma-delimited list
     // create array from images
     const arrImages = images.split(',');
+    // console.log(arrImages);
     // and sort array in natural order to match filename order in directory
-    arrImages.sort((a, b) => a.localeCompare(b, navigator.languages[0] || navigator.language, {numeric: true, ignorePunctuation: true}))
+    arrImages.sort((a, b) => a.localeCompare(b, navigator.languages[0] || navigator.language, {numeric: true, ignorePunctuation: true}));
+    // reverse the array order so images display newest (highest numbered) images first
+    arrImages.reverse();
+    
     // get div on page to load thumbnail images
     var imageThumbs = document.getElementById("image-thumbs");
     // loop through elements in array
