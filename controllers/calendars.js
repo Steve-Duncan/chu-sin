@@ -33,7 +33,7 @@
             year: "2024",month: "10",cal_1: "cal-2金",cal_2: "cal-1", arrDates: [25], note: ""
         },
         {
-            year: "2024",month: "11",cal_1: "cal-2金",cal_2: "cal-1", arrDates: [22], note: ""
+            year: "2024",month: "11",cal_1: "cal-2金",cal_2: "cal-2", arrDates: [22], note: ""
         },
         // data for Fukui Wednesmonth classes
         {

@@ -17,28 +17,28 @@ let styles = {
 exports.getHomePage = (req,res)=>{
     // render page with values for content page and styles page
     res.render('layout', {
-        page: '../views/partials/main',
+        page: 'partials/main',
         style: styles.homePage});
 }
 
 exports.getProfilePage = (req,res)=>{
     // render page with values for content page and styles page
     res.render('layout', {
-        page: '../views/partials/profile',
+        page: 'partials/profile',
         style: styles.profilePage});
 }
 
 exports.getClassesPage = (req,res)=>{
     // render page with values for content page and styles page
     res.render('layout', {
-        page: '../views/partials/classes',
+        page: 'partials/classes',
         style: styles.classPage,
         calendars: calendars});          
 }
 
 exports.getTopics = (req,res)=> {
     res.render('layout', {
-        page: '../views/partials/topics',
+        page: 'partials/topics',
         style: styles.topicsPage});
 
 }
@@ -49,7 +49,7 @@ exports.getTopicDetail = (req,res)=> {
     let year = req.params.year;
     let pageName = req.params.page;
     let imgPath = '/images/topics/'+ year + '/';
-    let page = '../views/partials/topics/'+ year + '/details/' + pageName;
+    let page = 'partials/topics/'+ year + '/details/' + pageName;
     res.render('layout', {
         page: page,
         style: styles.topicDetailsPage,
@@ -78,7 +78,7 @@ exports.getGalleryPage = (req,res)=>{
         };
         // render page with values for content page, medium, styles page, and image filenames 
         res.render('layout', {
-            page: '../views/partials/gallery',
+            page: 'partials/gallery',
             medium: medium,
             style: styles.galleryPage,
             images: files

@@ -16,11 +16,8 @@ footer {
 
 .main-content {
     display: grid;
-    /* grid-template-columns: repeat(14,auto);
-    grid-template-rows: repeat(10, 4rem); */
     grid-template-columns: repeat(2,auto);
     
-    max-width: 85vw;
 }
 a, a:visited {
     color: black;
@@ -28,16 +25,16 @@ a, a:visited {
 
 
 .archive {
-    grid-column-start: 14;
+    grid-column-start: 13;
     padding-top: 1rem;
-    text-align: right;
+    padding-right: 1rem;
     
     & ul {
         list-style: none;
+        text-align: center;
     }
     & ul>li {
         border-right: none;
-        /* display: none; */
 
         & :hover {
             background-color: lightslategray;
@@ -45,9 +42,7 @@ a, a:visited {
         
       }
     & ul>span {
-        /* grid-row: 1 / span 1;
-        grid-column: 11 / span 2; */
-        font-size: 12px;
+        font-size: 11px;
         text-decoration: underline;
         text-align: right;
         color:#000;
@@ -74,7 +69,7 @@ a, a:visited {
     & ul {
         list-style: none;
         display: grid;
-        padding-left: 2rem;
+        padding-left: 1.5rem;
         & li>a {
             font-size: 12px;
         }
@@ -135,56 +130,41 @@ footer {
             visibility: visible;
         }
     }
-
-
 }
 @media screen and (min-width: 720px) {
+    .main-content {
+        align-self: stretch;
+    }
     .archive {
-        grid-column: 3 / span 9;
+        grid-column-start: 3;
+        max-width: 80rem;
     }
     .classes {
-        grid-column: 3 / 12
+        grid-column-start: 3;
     }
-/* @media screen and (min-width: 900px) {
-    .archive {
-        grid-column: 4 / span 12;
-    }
-    .classes {
-        grid-column: 3 / 12
-    }
-} */
 }
 @media screen and (min-width: 1120px) {
-    .archive {
-        grid-column: 4 / span 10;
+    .main-content {
+        align-self: space-around;
     }
-    .classes {
-        grid-column: 4 / 12;
+    .archive {
+        grid-column-start: 4;
     }
 }
 @media screen and (min-width: 1240px) {
     .archive {
-        grid-column: 4 / 12;
     }
-    @media screen and (min-width: 1600px) {
-        .archive {
-            grid-column: 4 / 12;
-        }
-        .classes {
-            grid-column: 4 / 12;
-        }
+    .classes {
+        grid-column-start: 4;
+        
     }
-    @media screen and (min-width: 2200px) {
-        .archive {
-            grid-column-end: 11;
-        }
-        .classes {
-            grid-column-end: 11;
-        }
 
+@media screen and (min-width: 2200px) {
+    .archive {
+        grid-column-start: 4 ;
+    }
+    .classes {
+        grid-column-start: 4;
     }
 }
-
-
-
-
+}
