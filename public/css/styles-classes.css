@@ -140,18 +140,76 @@ section {
     }
     .grid-wrap {
         display: grid;
-        grid-template-columns: 190px auto;
+        /* grid-template-columns: 190px auto; */
+        grid-template-columns: 180px auto;
+        grid-column-gap: 1rem;
         justify-content: space-around;
         width: 100%;
 
         & .days {
             grid-area: days;
-            padding-top: 1.5rem;
+            /* padding-top: 1.5rem; */
+            display: grid;
+            align-items: center;
+
         }
-        > .times {
+        & .times {
             grid-area: times;
+            display: grid;
+            
+            align-items: center;
+            /* padding-left: 1rem; */
         }
     }
+    .days-times {
+        grid-template-areas:
+            "days times"
+            "days times"
+            "days times"
+            "cal-1 cal-2";
+    }
+    .class-day {
+        grid-row-start: 1;
+    }
+    .grid-row-2 {
+        grid-row-start: 2;
+    }
+    .grid-row-3 {
+        grid-row-start: 3;
+    }
+
+    .right {
+        /* padding-left: 52%; */
+        justify-self: end;
+    }
+    .center {
+        /* padding-left: 52%; */
+        justify-self: center;
+    }
+   
+    .justify {
+        justify-self: end;
+    }
+    .indent {
+        grid-template-columns: 190px auto;padding-left: 5rem;
+    }
+    .fit {
+        /* width: fit-content; */
+        /* display: flex-inline; */
+        grid-column: 1 / span 2;
+        justify-self: center;
+
+    }
+        .cal-1 {
+        grid-area: cal-1;
+    }
+
+    .cal-2 {
+        grid-area: cal-2;
+    }
+
+    
+
 }
 .kyoto-kita {
     grid-area: kita;
@@ -165,35 +223,53 @@ section {
     #cal-木 {
         grid-area: cal-Thu;
         padding-top: .5rem;
+
         grid-template-areas:
-            "days times"
-            "cal-1 cal-2";
+        "days times"
+        "days times"
+        "days times"
+        "cal-1 cal-2";
+
+        .times {
+            grid-template-rows: repeat(3, 33.33%);
+        }
+        
     }
+    /* .cal-1 {
+        grid-area: cal-1;
+    }
+
     .cal-2 {
         grid-area: cal-2;
-    }
+    } */
 
     #cal-金 {
         grid-area: cal-Fri;
-        padding-top: 5.5rem;
-        grid-template-areas:
+        padding-top: 4.5rem;
+        /* grid-template-areas:
             "days times"
-            "cal-1 cal-2";
-        .cal-1 {
+            "cal-1 cal-2"; */
+        .times {
+            grid-template-rows: repeat(2,50%);
+        }
+        /* .cal-1 {
             grid-area: cal-1;
         }
     
         .cal-2 {
             grid-area: cal-2;
-        }
+        } */
     }
 
     #cal-土 {
         grid-area: cal-Sat;
         padding-top: 3rem;
-        grid-template-areas:
+        /* grid-template-areas:
             "days times"
-            "cal-1 cal-2";
+            "cal-1 cal-2"; */
+        .times {
+            grid-template-rows: repeat(2,50%);
+        }
         .cal-1 {
             grid-area: cal-1;
         }
@@ -211,10 +287,28 @@ section {
         "info info";
         
     #cal-3土 {
+        padding-top: 1rem;
+        
         grid-area: cal-Sat;
         grid-template-areas:
             "days times"
             "cal-1 cal-2";
+        
+        /* & .class-day {
+            justify-self: center;
+        } */
+        /* .times {
+            grid-template-rows: repeat(2,50%);
+        } */
+        /* .day {
+            grid-area: days;
+            padding-left: 3rem;
+            justify-self: start;
+        } */
+        /* .time {
+            grid-area: times;
+            justify-self: start;
+        } */
     }
 }
 .kyoto-jeugia {
@@ -224,24 +318,29 @@ section {
         "cal-Fri cal-Fri"
         "info info";
     #cal-2金 {
+        padding-top: 1rem;
         grid-area: cal-Fri;
         grid-template-areas:
             "days times"
             "cal-1 cal-2";
 
-            .cal-2 {
-                grid-area: cal-2;
-            }
+        & .class-day {
+            justify-self: center;
+        }
     }
 }
 
 .fukui-wed {
+    
     grid-area: fukui-wed;
     grid-template-areas:
         "location location"
         "cal-Wed cal-Wed"
         "info info";
-    
+    .times, .days {
+        grid-template-rows: repeat(3,33.33%);
+    }
+
     .location {
         display: grid;
         height: 5.5rem;
@@ -261,14 +360,11 @@ section {
     }
 
     #cal-水 {
+        padding-top: 1rem;
         grid-area: cal-Wed;
         grid-template-areas:
             "days times"
             "cal-1 cal-2";
-
-            .cal-2 {
-            grid-area: cal-2;
-        }
     }
 }
 
@@ -280,14 +376,11 @@ section {
         "info info";
     
     #cal-火 {
+        padding-top: 1rem;
         grid-area: cal-Tue;
         grid-template-areas:
             "days times"
             "cal-1 cal-2";
-
-            .cal-2 {
-                grid-area: cal-2;
-            }
     }
 }
 
@@ -299,26 +392,17 @@ section {
         "info info";
     
     #cal-月 {
+        padding-top: 1rem;
         grid-area: cal-Mon;
         grid-template-areas:
             "days times"
             "cal-1 cal-2";
-            .cal-1 {
-                grid-area: cal-1;
-            }
-            .cal-2 {
-                grid-area: cal-2;
-            }
     }
 }
 
 
 
 /****************** rules below here apply to all areas ***************/
-.right {
-    padding-left: 52%;
-    /* color:crimson */
-}
 /* ***************************************************************** */
 /* ********************* media queries *******************************/
 /* ***************************************************************** */
