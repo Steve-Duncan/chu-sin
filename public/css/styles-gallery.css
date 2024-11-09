@@ -22,7 +22,10 @@ body {
     font-family: Arial;
     color: #fff;
     border-top: 1px solid var(--color-gray-light);
-    
+
+    a, a:visited {
+        color: white;
+    }
     div {
       display: flex;
       
