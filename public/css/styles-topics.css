@@ -27,11 +27,11 @@ a, a:visited {
 .archive {
     grid-column-start: 13;
     padding-top: 1rem;
-    padding-right: 1rem;
+    padding-right: .5rem;
     
     & ul {
         list-style: none;
-        text-align: center;
+        text-align: left;
     }
     & ul>li {
         border-right: none;
@@ -64,12 +64,12 @@ a, a:visited {
 }
 
 .classes {
-    grid-column: 5 /10;
+    grid-column-start: 5;
     grid-row-start: 1;
     & ul {
         list-style: none;
         display: grid;
-        padding-left: 1.5rem;
+        padding-left: 1rem;
         & li>a {
             font-size: 12px;
         }
