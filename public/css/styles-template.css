@@ -14,7 +14,7 @@
     box-sizing: border-box;
     font-size: 62.5%;
   }
-  a:visited {
+  a, a:visited {
     color: white;
   }
   
@@ -198,9 +198,9 @@
   }
 
   @media (min-width: 650px) {
-    a:visited {
+    /* a:visited {
       color: white;
-    }
+    } */
   
     .menu-toggle {
       display: none;
