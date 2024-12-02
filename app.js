@@ -8,6 +8,7 @@ const logger = require('morgan');
 
 
 const routers = require('./routes/routes');
+const routerTopics = require('./routes/topics.js');
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -27,6 +28,7 @@ app.use(express.static('views'));
 
 app.use(favicon('public/images/favicon.ico'));
 
+app.use('/topics', routerTopics);
 app.use('/', routers);
 
 // catch 404 and forward to error handler
@@ -45,12 +47,10 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
+
 
 module.exports = app;

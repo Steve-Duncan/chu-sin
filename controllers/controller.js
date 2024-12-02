@@ -36,37 +36,48 @@ exports.getClassesPage = (req,res)=>{
         calendars: calendars});          
 }
 
-exports.getTopics = (req,res)=> {
-    res.render('layout', {
-        page: 'partials/topics',
-        style: styles.topicsPage});
-
-}
-// see if I can combine getTopics and getTopicsDetail into single controller
-// maybe move all arghive pages under views/partials/archive/year
-// and /topics would default to current year
-exports.getTopicDetail = (req,res)=> {
-    let year = req.params.year;
-    let pageName = req.params.page;
-    let imgPath = '/images/topics/'+ year + '/';
-    let page = 'partials/topics/'+ year + '/details/' + pageName;
-    res.render('layout', {
-        page: page,
-        style: styles.topicDetailsPage,
-        imgPath: imgPath
-    });
-}
-
-exports.getGalleryPage = (req,res)=>{
-    // initialize variable to hold medium
-    let medium;
-    // set default value of medium
+exports.getGalleryPage = (req,res,next)=>{
     if(typeof req.params.medium==='undefined') {
+        // set default value of medium
         medium='fruit'
     } else {
         // or set value of medium to whatever value was passed
         medium=req.params.medium
     };
+    // define the image directory
+    const imageDirectory  = './public/images/gallery/' + medium ;
+    // read filenames in image directory
+    fs.readdir(imageDirectory, (err, files) => {
+        if (err) {
+            console.error('Error reading directory:');
+            return;
+        };
+        // render page with values for content page, medium, styles page, and image filenames 
+        res.render('layout', {
+            page: 'partials/gallery',
+            medium: medium,
+            style: styles.galleryPage,
+            images: files
+        });
+    });
+        
+    
+
+}
+
+exports.doNotGetGalleryPage = (req,res,next)=>{
+
+    console.log('In getGalleryPage, url: ' + req.url);
+    // initialize variable to hold medium
+    let medium;
+    // set default value of medium
+    if(typeof req.medium==='undefined') {
+        medium='fruit'
+    } else {
+        // or set value of medium to whatever value was passed
+        medium=req.params.medium
+    };
+console.log("medium: " + medium);
     // define the image directory
     const imageDirectory  = './public/images/gallery/' + medium ;
     
@@ -85,6 +96,11 @@ exports.getGalleryPage = (req,res)=>{
         });
     });
 };
+
+
+
+
+
 
 
 

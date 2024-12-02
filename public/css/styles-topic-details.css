@@ -3,8 +3,11 @@
 
 body {
     color:#000;
-    font-size: 11px;
+    font-size: 12px;
     width: 100vw;
+    & .bold {
+        font-weight: bold;
+    }
 }
 .main-content {
     & span {
@@ -30,9 +33,9 @@ body {
     margin: 1.5rem 1rem 0 1rem;
 
     & p {
-        margin-bottom: 2rem;
+        margin-bottom: .5rem;
         & :last-child {
-            font-weight: bold;
+            /* font-weight: bold; */
         }
     }
 }
@@ -42,15 +45,26 @@ span.title {
     font-weight: bold;
     margin-left: 0;
 }
+.info {
+    /* display: flex; */
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    line-height: 2;
+}
 .pics {
     
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    /* justify-content: space-between; */
+    margin-right: 1rem;
+    align-items: center;
     flex: 0 1 100%;
-    column-gap: 3rem;
-    row-gap: 3rem;
-    margin-top: 5rem;
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
+    margin-top: 2rem;
+    margin-left: 1.5rem;
     max-width: 100%;
     & img {
         max-width: 200px;
@@ -67,6 +81,9 @@ span.title {
 @media screen and (min-width: 650px) {
     .main-content {
         /* grid-template-rows: repeat(12, 4rem); */
+        display: flex;
+        justify-content: space-around;
+        /* display: flex; */
     }
     .wrapper {
         grid-row-start: 3;
@@ -77,12 +94,15 @@ span.title {
     }
 
     .classes {
-        grid-row-start: 3;
+        /* grid-row-start: 3; */
+        /* justify-self: center; */
+        max-width: 93rem;
     
     }
     .pics {
         /* justify-content: stretch; */
-        display: flex;
+        /* display: flex; */
+        justify-content: start;
     }
 }
 
@@ -108,7 +128,7 @@ span.title {
     }
     .info {
         font-size: 12px;
-        margin-left: 18rem;
+        /* margin-left: 18rem; */
         
     }
     .archive {
@@ -128,7 +148,7 @@ span.title {
         & .pics {
             justify-content: space-around;
             /* column-gap: 7rem; */
-            margin-left: 10rem;
+            /* margin-left: 10rem; */
         }
     }
     
@@ -138,10 +158,10 @@ span.title {
         margin-left: 41rem;
     }
     .classes {
-        padding-left: 20rem;
+        /* padding-left: 20rem; */
         .pics {
             justify-content: flex-start;
-            margin-left: 20rem;
+            /* margin-left: 20rem; */
             column-gap: 4rem;
         }
         

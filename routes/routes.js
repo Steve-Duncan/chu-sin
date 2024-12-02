@@ -1,6 +1,8 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 const controller = require('../controllers/controller');
+const routerTopics = express.Router();
+const topicsController = require('../controllers/topicsController.js');
 
 // define which function in controller will handle request
 
@@ -13,14 +15,15 @@ router.get("/profile",controller.getProfilePage);
 // GET classes page
 router.get("/classes",controller.getClassesPage);
 
-// GET topics page
-router.get("/topics",controller.getTopics);
-
-router.get("/topics/:year/details/:page",controller.getTopicDetail);
-
-
 // GET gallery page
-router.get("/gallery",controller.getGalleryPage);
 router.get("/:medium",controller.getGalleryPage);
+
+// GET topics page
+router.get("/topics",topicsController.getTopics);
+
+
+
+
+
 
 module.exports = router;
