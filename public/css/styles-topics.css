@@ -1,5 +1,4 @@
 @import url("styles-template.css");
-/* @import url("styles-topic-details.css"); */
 
 body {
     color: black;
@@ -28,7 +27,7 @@ a, a:visited {
 
 .archive {
     /* temp hide archive */
-    
+    display: none;
     margin-left: auto;
     max-height: 5rem;
     padding-top: 1rem;
