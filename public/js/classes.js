@@ -1,16 +1,13 @@
 function calendar(year, month, targetDiv, calNum, arrClassDates, note) {
+  // get calendar number - 1/2 for L/R
   calNum=calNum.slice(-1);
-   console.log('targetDiv: ' + targetDiv);
-  //  get day of week name
+  //  get day of week name for class day
    let dayName = targetDiv.slice(-1);
-   console.log('day of week: ' + dayName);
-  // get destination location
+  // get destination location for calendar
   const grid = document.getElementById(targetDiv);
 
   // get number of days in month
-  const daysInMonth = (year, month) => new Date(year, month, 0).getDate();
-  const numDaysInMonth = daysInMonth(year, month)
-  console.log('days in month: ' + numDaysInMonth);
+  const numDaysInMonth = new Date(year, month, 0).getDate();
   // create array of day numbers
   const arrDayNums = Array.from({length: numDaysInMonth}, (_, i) => i + 1)
 
@@ -50,19 +47,13 @@ function calendar(year, month, targetDiv, calNum, arrClassDates, note) {
     }; 
     newDiv.appendChild(cell);
   }
-console.log(month);
-  console.log(getFirstDayOfMonth(year, month-1));
-  // get day of week for first day of month
-  day = new Date(year + "-" + month + "-01").getDay();
-  console.log('1st day of month: ' + day);
+
+  // get day of week number for first day of month
+  let day=new Date(year, month-1, 1).getDay();
+    
   // create empty divs to precede first day
-  let n=0;
-  // count number of empty cells needed
-  for (let i=0; i<day+1; i++ ) {
-    n=i+1;
-  }
   //  add blank to cell since styles can't apply to null cells
-  addCells(n, newDiv, "");
+  addCells(day, newDiv, "");
   // populate remaining divs with days of the month
   for (let dayNum of arrDayNums) {
     let cell = document.createElement("div");
@@ -80,14 +71,13 @@ console.log(month);
   }
 
   // add empty cells to fill out calendar grid
-  let emptyCells = n;
-  let cellsUsed = numDaysInMonth + emptyCells
-  let gridTemplateAreas = false;
+  // number of cells used is days in month + any empty cells for padding at start of month
+  let cellsUsed = numDaysInMonth + day;
   // count how many cells needed
   let numRows;
   if (cellsUsed>35 && cellsUsed<42){
     numCells=(42 - cellsUsed)
-    // count number of rows used
+    // number of rows used
     numRows=6;
   } else if (cellsUsed<=35){
     numCells=(35 - cellsUsed)
@@ -95,7 +85,6 @@ console.log(month);
     numRows=5;
   }
   addCells(numCells, newDiv, "");
-
   
   let span2 = document.createElement("span");
   newDiv.appendChild(span2);
@@ -109,11 +98,7 @@ console.log(month);
   
   span2.textContent = note;
 
-}; // end function
-
-function getFirstDayOfMonth(year, month) {
-  return new Date(year, month, 1);
-}
+}; // end calendar function
 
 function addCells (numCells, grid, val) {
   for (let i=0; i<numCells; i++ ) {
@@ -124,6 +109,6 @@ function addCells (numCells, grid, val) {
       cell.className = "cell";
       
       grid.appendChild(cell);
-  }
-}
+  };
+};
 
