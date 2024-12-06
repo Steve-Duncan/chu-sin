@@ -1,18 +1,9 @@
-/* @import url("../css/styles-main.css"); */
 @import url("styles-template.css");
 
 
 body {
     background-color: #000;
 }
-
-/* .main-content {
-  max-width: 100rem;
-  margin: 0 auto;
-  justify-self: center;
-} */
-
-
 
 .intro { 
   display: flex;
@@ -61,34 +52,19 @@ body {
   #menu p { 
     font-size: 12spt;
   }
-
-  /* .modal {
-    display:contents;
-  } */
   
   .main-content {
     display: grid;
     justify-items: center;
   }
   #image-thumbs { 
-    /* display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-    grid-template-rows: repeat(auto, auto);
-    justify-content: space-around; */
- display: flex;
- flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 
- max-width: 85rem;
-
-    
-    /* margin: 3rem 2rem 5rem 2rem; */
+    max-width: 85rem;
     margin: 3rem 0 5rem 0;
-    gap: 2.5rem;
-    
-    /* grid-template-columns: repeat(7, 10rem);
-    grid-template-rows: repeat(auto, auto);
-    grid-gap: 1rem; */
-    
+    gap: 2.5rem;    
   }
   .grid-wrapper {
     max-width: 85rem;
@@ -104,11 +80,6 @@ body {
     width: 10rem; 
     height: 10rem; 
     object-fit: cover; 
-    /* margin-right: 10px;  */
     cursor: pointer;
   }
 
-  .footer {
-    /* padding: 10rem 0 4.5rem; */
-    /* margin-top: 10rem; */
-  }

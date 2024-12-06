@@ -10,16 +10,7 @@ let styles = {
 // controller to build and display topics page; info from JSON file in each archive year directory
 exports.getTopics = (req,res,next)=> {
     // get url from params 
-    let url = req.url;
-    let year;
-    // if no year passed as param, default to current year
-    if(url==="/topics") {
-        year = "/" + new Date().getFullYear();
-    } else if(url==='/soap') {
-        next()
-    } else {
-        year = url;
-    };
+    let year = req.url;
     // build path to JSON file for selected year in archive
     let jsonFile = '../views/partials/topics' + year + "/topics.json";
     

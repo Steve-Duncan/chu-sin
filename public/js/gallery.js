@@ -1,7 +1,6 @@
 
 function loadGallery(medium, images) {
 
-    console.log(images);
     // images import as comma-delimited list
     // create array from images
     const arrImages = images.split(',');

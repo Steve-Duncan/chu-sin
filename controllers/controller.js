@@ -65,37 +65,6 @@ exports.getGalleryPage = (req,res,next)=>{
 
 }
 
-exports.doNotGetGalleryPage = (req,res,next)=>{
-
-    console.log('In getGalleryPage, url: ' + req.url);
-    // initialize variable to hold medium
-    let medium;
-    // set default value of medium
-    if(typeof req.medium==='undefined') {
-        medium='fruit'
-    } else {
-        // or set value of medium to whatever value was passed
-        medium=req.params.medium
-    };
-console.log("medium: " + medium);
-    // define the image directory
-    const imageDirectory  = './public/images/gallery/' + medium ;
-    
-    // read filenames in image directory
-    fs.readdir(imageDirectory, (err, files) => {
-        if (err) {
-            console.error('Error reading directory:');
-            return;
-        };
-        // render page with values for content page, medium, styles page, and image filenames 
-        res.render('layout', {
-            page: 'partials/gallery',
-            medium: medium,
-            style: styles.galleryPage,
-            images: files
-        });
-    });
-};
 
 
 

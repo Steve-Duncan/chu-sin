@@ -6,11 +6,17 @@ const favicon = require('serve-favicon');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 
+const compression = require('compression');
+
+const app = express();
+app.use(compression());
+
+
 
 const routers = require('./routes/routes');
 const routerTopics = require('./routes/topics.js');
 
-const app = express();
+
 const port = process.env.PORT || 3000;
 
 // view engine setup
