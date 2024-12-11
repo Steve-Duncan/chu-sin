@@ -6,6 +6,7 @@
     "start": "nodemon app.js"
   },
   "dependencies": {
+    "compression": "^1.7.5",
     "cookie-parser": "^1.0.0",
     "debug": "~2.6.9",
     "ejs": "^3.1.10",
