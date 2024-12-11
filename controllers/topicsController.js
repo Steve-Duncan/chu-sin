@@ -9,10 +9,16 @@ let styles = {
 
 // controller to build and display topics page; info from JSON file in each archive year directory
 exports.getTopics = (req,res,next)=> {
+    console.log("url: " + req.url);
+    let year;
+    if(req.url==="/") {
+        year = "2024"
+    } else {
     // get url from params 
-    let year = req.url;
+    year = req.url;
+    }
     // build path to JSON file for selected year in archive
-    let jsonFile = '../views/partials/topics' + year + "/topics.json";
+    let jsonFile = '../views/partials/topics/' + year + "/topics.json";
     
     // get data from JSON file
     let JSONdata = require(jsonFile);

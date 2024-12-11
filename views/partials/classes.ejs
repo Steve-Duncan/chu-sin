@@ -144,97 +144,16 @@
 </section>
 </div>
 
+<!-- ***********************************************************
+iterate calendars data passed in from controller.js and
+call calendar function in classes.js to create calendars
+*********************************************************** -->
 <script>
     <% calendars.forEach((calendar, index) => { %>
         calendar(<%- calendar.year %>,<%- calendar.month %>,'<%= calendar.cal_1 %>','<%= calendar.cal_2 %>',[<%= calendar.arrDates %>],'<%= calendar.note %>');    
     <% }); %>
-    
-// ***********************************************************
-// call script to create calendars for Kyoto Kita
-// ***********************************************************
-
-
-// var arrDates = [13,27];
-// var note = "※27日午後ウィングス京都";
-// calendar(2024,6,"cal-木","cal-1",arrDates, note);
-
-// var arrDates = [11];
-// var note = "";
-// calendar(2024,7,"cal-木","cal-2", arrDates, note);
-
-// var arrDates = [7,21];
-// var note = "※7日ウィングス京都";
-// calendar(2024,6,"cal-金","cal-1",arrDates, note);
-
-// var arrDates = [19];
-// var note = "※ウィングス京都";
-// calendar(2024,7,"cal-金","cal-2",arrDates, note);
-
-// var arrDates = [8,22];
-// var note = "※両日ウイングス京都";
-// calendar(2024,6,"cal-土","cal-1",arrDates, note);
-
-// var arrDates = [13];
-// var note = "";
-// calendar(2024,7,"cal-土","cal-2",arrDates, note);
+</script> 
 
 
 
-// ***********************************************************
-// call script to create calendars for Kyoto Asahi
-// ***********************************************************
-// var arrDates = [15];
-// var note = "";
-// calendar(2024,6,"cal-3土","cal-1",arrDates, note);
 
-// var arrDates = [20];
-// var note = "";
-// calendar(2024,7,"cal-3土","cal-2", arrDates, note);
-
-// ***********************************************************
-// call script to create calendars for Kyoto JEUGIA 
-// ***********************************************************
-// var arrDates = [28];
-// var note = "";
-// calendar(2024,6,"cal-2金","cal-1", arrDates, note);
-
-// var arrDates = [""];
-// var note = "";
-// calendar(2024,6,"cal-2金","cal-1", arrDates, note);
-
-// ***********************************************************
-// call script to create calendars for Fukui Wednesday classes
-// var arrDates = [5,19];
-// var note = "";
-// calendar(2024,6,"cal-水","cal-1", arrDates, note);
-
-// var arrDates = [3,24];
-// var note = "";
-// calendar(2024,6,"cal-水","cal-2", arrDates, note);
-
-// ***********************************************************
-
-// ***********************************************************
-// call script to create calendars for Fukui Newspaper classes
-// ***********************************************************
-// var arrDates = [4,18];
-// var note = "";
-// calendar(2024,6,"cal-火","cal-1", arrDates, note);
-
-// var arrDates = [2,23];
-// var note = "";
-// calendar(2024,7,"cal-火","cal-2", arrDates, note);
-
-// ***********************************************************
-// call script to create calendars for Fukui Sabae classes
-// ***********************************************************
-// var arrDates = [3,17];
-// var note = "";
-// calendar(2024,6,"cal-月","cal-1", arrDates, note);
-
-// var arrDates = [1,22];
-// var note = "";
-// calendar(2024,7,"cal-月","cal-2", arrDates, note);
-
-
-</script>    
