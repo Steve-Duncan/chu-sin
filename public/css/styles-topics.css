@@ -82,6 +82,10 @@ a, a:visited {
             font-size: 12px;
         }
     }
+    & img {
+        height: 100px;
+        width: 100px;
+    }
 }
 
 .class-grid-item {
