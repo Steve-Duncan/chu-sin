@@ -1,0 +1,35 @@
+@import url("styles-template.css");
+
+.main-content {
+    color: black;
+}
+
+.profileInfo>h3:before {
+    content:"プロフィール";
+    font-weight: bold;
+    
+}
+.profileInfo:after {
+    content: 
+    "佐藤朋子　tomoko sato"
+
+    "\a\a福井育ち　京都在住"
+    "\a学生の頃から木工を中心に作品を制作。"
+    "\a2004年、フルーツカービングを知り、単身本場タイへ。"
+    "\a帰国後、「atelier SATO フルーツ＆ソープカービング教室」を京都と福井で開講。"
+    "\aカルチャー教室講師、イベントやTVでの展示、デモンストレーション、出張講習等、活動中。"
+
+    "\a\a\a【主な仕事】"
+
+    "\a\aV6 「Super Powers 」ミュージックビデオ作品提供"
+    "\a月刊誌「家庭画報 」2019年 目次ページ掲載作品担当"
+    "\aルイ・ヴィトン店舗にて展示・実演　(東京)"
+    "\a青森県公式「顔りんご飴」制作"
+    "\a月刊誌「SUPINNUTS」表紙"
+    "\aその他、テレビやイベントでの展示・実演、ワークショップ、講演など多数";
+
+    white-space: pre-wrap;
+    font-size: 12px;
+    line-height: 2.7rem;
+}
+

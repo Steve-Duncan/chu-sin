@@ -1,0 +1,15 @@
+<%- include('archive') %>
+
+<section class="classes">
+    <ul>
+        <% data.topics.forEach((topic) => { %>
+            <li class="class-grid-item border-top">
+                <a href=<%= topic.link %>><img src=<%= topic.src %>></a>
+                <a href=<%= topic.link %>><%= topic.text %></a>
+            </li>
+            
+        <% }); %>
+
+    </ul>
+</section>
+

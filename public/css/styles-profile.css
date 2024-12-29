@@ -1,0 +1,96 @@
+@import url("/css/styles-template.css");
+@import url("/css/profile-info.css");
+
+
+body {
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+.logo, .wrapper-menu, nav, .desktop>li {
+    background-color: var(--color-gray-dark);
+}
+.desktop>li {
+    &.open{
+    background-color: var(--color-gray-light);
+    }
+}
+.main-content {
+    display: grid;
+    grid-template-columns: minmax(5rem, 6%) 50% 44%;
+    grid-template-rows:  auto 3.5rem repeat( auto, minmax(5rem, 8rem));
+        
+    margin: 0 auto;
+    max-width: 85rem;
+    color:black;
+    grid-template-areas:
+        "profInfo profInfo profInfo"
+        "title-year title-exhibit title-event"
+        "year exhibit event";
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+.tv-news {
+    margin-top: 5rem;
+    width: 100%;
+}
+
+.profileInfo {
+    grid-area: profInfo;
+    grid-column: 1 / -1;
+    font-size: 12px;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    border: none;
+    padding-bottom: 2.5rem;
+
+    h3 {
+        padding-top: 2.5rem;
+        padding-bottom:.5rem;
+        font-size: 1.6rem;
+    }
+}
+
+.grid-item {
+    justify-content: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 1.8;
+    padding: .7rem 0 .7rem 1rem;
+    border: 1px solid var(--color-gray-verylight);
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-gray-verylight);
+    border-top: var(--color-gray-verylight);
+    padding: .2rem 0 .2rem 1rem;
+}
+
+.footer {
+    margin-top: 8rem;
+}
+
+/* ****************** Media queries ****************** */
+@media screen and (min-width: 360px) {
+    .main-content {
+        padding-left: .5rem;
+        padding-right: 3.5rem;
+    }
+}
+@media screen and (min-width: 412px) {
+    .main-content {
+        padding-left: .5rem;
+        padding-right: 3rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .main-content {
+        padding-left: .5rem;
+        padding-right: 1rem;
+    }
+    
+} 
+

@@ -1,0 +1,159 @@
+
+<script src="./js/classes.js"></script>
+<!-- **************** Classroom info ******************* -->
+<header class="classroomInfo">
+    <h3></h3>
+</header>
+
+
+
+<!-- **************** Kyoto Kita classes ******************* -->
+<section class="kyoto-kita venue">
+    <span class="location"><b>京都教室</b>   ・北文化会館    <em>地図</em>    ／  ・ウィングス京都	<em>地図</em></span>
+    <p class="courseInfo"><b></b><br></p>
+    <div id="cal-木" class="grid-wrap days-times">
+        <!-- calendars are generated in this section by javascript -->
+        <p class="days">
+            <span class="class-day">木曜クラス</span>
+            <span class="justify">第2、第4 木曜日  ・昼の部</span>
+            <span class="right">・夜の部</span> 
+        </p>
+        <p class="times">
+            <span class="grid-row-2">14:30～16:30</span>  
+            <span class="grid-row-3">18:30～20:30</span> 
+        </p>
+    </div>
+    <div id="cal-金" class="grid-wrap days-times">
+        <p class="days">
+            <span class="class-day">金曜クラス</span>
+            <span class="indent">第1、第3 金曜日	</span>
+        </p>
+        <p class="times">
+            <span class="grid-row-2">14:30～16:30</span>
+        </p>
+    </div>
+    <div id="cal-土" class="grid-wrap days-times">
+        <p class="days">
+            <span class="class-day">土曜クラス</span>
+            <span class="indent">第2、 第4	土曜日</span>
+        </p>
+        <p class="times">
+            <span class="grid-row-2">14:00～16:00</span>
+        </p>
+    </div>
+
+</section>
+
+
+<!-- **************** Kyoto Asahi classes ******************* -->
+<section class="kyoto-asahi venue">
+    <span class="location"><b>京都</b>   ・朝日カルチャーセンター教室    <em>地図</em></span>
+    <p class="courseInfo"></p>
+    <div id="cal-3土" class="grid-wrap">
+        <p class="days">
+            <span class="class-day center">第3 土曜日</span>
+            <!-- <span class="time">10:30～12:30</span> -->
+        </p>
+        <p class="times">
+            <span class="time">10:30～12:30</span>
+        </p>
+
+    </div>
+    
+</section>
+
+
+<!-- **************** JEUGIA classes ******************* -->
+<section class="kyoto-jeugia venue">
+    <span class="location"><b>京都   ・JEUGIA</b>カルチャーセンター洛北阪急スクエア    <em>地図</em></span>
+    <p class="courseInfo"></p>
+    
+    <div id="cal-2金" class="grid-wrap">
+        <p class="days class-day center">
+            <span>第4 金曜日</span>
+        </p>
+        <p class="times grid-row-1">
+            <span>10:30～12:30</span>
+        </p>
+    </div>
+</section>
+
+
+<!-- **************** Fukui Wednesday classes ******************* -->
+<section class="fukui-wed venue">
+    
+    <div class="location">
+        <span class="sp1"><b>福井</b> ・水曜教室</span>
+        <span class="sp2">・昼の部 福井商工会議所<em>地図</em></span>
+        <span class="sp3">・夜の部 AOSSA(アオッサ)	<em> 地図</em></span>
+    </div>
+
+    
+    
+    
+    <p class="courseInfo"><b></b></p>
+
+    <div id="cal-水" class="grid-wrap">
+        <p class="days class-day center">
+            <span>第1、第3 水曜	日</span>
+            <span class="right">・昼の部 </span>
+            <span class="right">・夜の部</span>
+        </p>
+        <p class="times">
+            <span class="grid-row-2">14:30～16:30</span>
+            <span class="grid-row-3">18:30～20:30</span>
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- **************** Fukui Newspaper classes ******************* -->
+<section class="fukui-newspaper venue">
+    <span class="location"><b>福井</b>・福井新聞文化センター    <em>地図</em></span>
+    <p class="courseInfo"></p>
+    <div id="cal-火" class="grid-wrap">
+        <p class="days class-day center">
+            <span>第1、第3 火曜日</span>
+        </p>
+        <p class="times">
+            19:00～21:00
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- **************** Fukui Sabae classes ******************* -->
+<section class="fukui-sabae venue">
+    <span class="location"><b>福井</b>   鯖江市文化センター   <em>	地図</em></span>
+    <p class="courseInfo"><b></b></p>
+    <div id="cal-月" class="grid-wrap">
+        <p class="days class-day center">
+            <span>第1、第3 月曜日  ・昼の部</span>
+            <span class="right">・夜の部</span> 
+        </p>
+        <p class="times">
+            <span>14:30-16:30</span>
+            <span>19:00-21:00</span> 
+        </p>
+
+    </div>
+</section>
+</div>
+
+<!-- ***********************************************************
+iterate calendars data passed in from controller.js and
+call calendar function in classes.js to create calendars
+*********************************************************** -->
+<script>
+    <% calendars.forEach((calendar, index) => { %>
+        calendar(<%- calendar.year %>,<%- calendar.month %>,'<%= calendar.cal_1 %>','<%= calendar.cal_2 %>',[<%= calendar.arrDates %>],'<%= calendar.note %>');    
+    <% }); %>
+</script> 
+
+
+
+
