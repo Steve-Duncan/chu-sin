@@ -41,7 +41,7 @@
             year: "2025",month: "2",cal_1: "cal-水",cal_2: "cal-2", arrDates: [5,19], note: "＊両日とも昼の部のみ"
         },
         {
-            year: "2025",month: "1",cal_1: "cal-水",cal_2: "cal-1", arrDates: [8,22], note: "※6日は昼の部のみ"
+            year: "2025",month: "1",cal_1: "cal-水",cal_2: "cal-1", arrDates: [8,22], note: "＊両日とも昼の部のみ"
         },
         // data for Fukui Newspaper classes
         {
