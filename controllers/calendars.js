@@ -52,10 +52,10 @@
         },
         // data for Fukui Sabae classes
         {
-            year: "2025",month: "2",cal_1: "cal-月",cal_2: "cal-2", arrDates: [3,17], note: ""
+            year: "2025",month: "2",cal_1: "cal-月",cal_2: "cal-2", arrDates: [3,17], note: "＊両日とも昼の部のみ"
         },
         {
-            year: "2025",month: "1",cal_1: "cal-月",cal_2: "cal-1", arrDates: [6,20], note: ""
+            year: "2025",month: "1",cal_1: "cal-月",cal_2: "cal-1", arrDates: [6,20], note: "＊両日とも昼の部のみ"
         },
 
     ];
