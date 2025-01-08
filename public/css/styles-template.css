@@ -186,8 +186,12 @@
       justify-content: center;
       align-items: center;
       background-color: var(--color-gray-light);
-      height: 5rem;
-  
+      height: 7rem;
+
+      /* position: fixed; */
+      left: 0;
+      bottom: 0;
+      
     }
   
   /* ******* Media queries ****************************************** */
