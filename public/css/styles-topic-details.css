@@ -34,9 +34,6 @@ body {
 
     & p {
         margin-bottom: .5rem;
-        & :last-child {
-            /* font-weight: bold; */
-        }
     }
 }
 
@@ -123,9 +120,6 @@ span.title {
     }
 }
 @media screen and (min-width: 1120px) {
-    .main-content {
-        
-    }
     .info {
         font-size: 12px;
         /* margin-left: 18rem; */
