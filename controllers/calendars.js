@@ -29,7 +29,7 @@
             year: "2025",month: "2",cal_1: "cal-3土",cal_2: "cal-1", arrDates: [15], note: ""
         },
         {
-            year: "2025",month: "3",cal_1: "cal-3土",cal_2: "cal-2", arrDates: [18], note: ""
+            year: "2025",month: "3",cal_1: "cal-3土",cal_2: "cal-2", arrDates: [15], note: ""
         },
         
         
@@ -38,7 +38,7 @@
             year: "2025",month: "2",cal_1: "cal-2金",cal_2: "cal-1", arrDates: [28], note: ""
         },
         {
-            year: "2025",month: "3",cal_1: "cal-2金",cal_2: "cal-2", arrDates: [15], note: ""
+            year: "2025",month: "3",cal_1: "cal-2金",cal_2: "cal-2", arrDates: [28], note: ""
         },
         
         
