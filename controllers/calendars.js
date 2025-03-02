@@ -17,7 +17,7 @@
             year: "2025",month: "3",cal_1: "cal-金",cal_2: "cal-1", arrDates: [7,21], note: "＊7日ウィングス京都"
         },
         {
-            year: "2025",month: "4",cal_1: "cal-金",cal_2: "cal-2", arrDates: [4,18], note: "＊両日ともウィングス京都"
+            year: "2025",month: "4",cal_1: "cal-金",cal_2: "cal-2", arrDates: [4,18], note: "＊18日ともウィングス京都"
         },
 
         
@@ -25,7 +25,7 @@
             year: "2025",month: "3",cal_1: "cal-土",cal_2: "cal-1", arrDates: [8,22], note: "＊8日ウィングス京都"
         },
         {
-            year: "2025",month: "4",cal_1: "cal-土",cal_2: "cal-2", arrDates: [12,26], note: "＊22日ウィングス京都"
+            year: "2025",month: "4",cal_1: "cal-土",cal_2: "cal-2", arrDates: [12,26], note: ""
         },
         
         
@@ -71,7 +71,7 @@
             year: "2025",month: "3",cal_1: "cal-月",cal_2: "cal-1", arrDates: [3,17], note: "＊両日とも昼の部のみ"
         },
         {
-            year: "2025",month: "4",cal_1: "cal-月",cal_2: "cal-2", arrDates: [14], note: "＊両日とも昼のみ"
+            year: "2025",month: "4",cal_1: "cal-月",cal_2: "cal-2", arrDates: [14], note: ""
         },
 
     
