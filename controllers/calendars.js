@@ -17,7 +17,7 @@
             year: "2025",month: "3",cal_1: "cal-金",cal_2: "cal-1", arrDates: [7,21], note: "＊7日ウィングス京都"
         },
         {
-            year: "2025",month: "4",cal_1: "cal-金",cal_2: "cal-2", arrDates: [4,18], note: "＊18日ともウィングス京都"
+            year: "2025",month: "4",cal_1: "cal-金",cal_2: "cal-2", arrDates: [4,18], note: "＊18日ウィングス京都"
         },
 
         
