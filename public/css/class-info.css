@@ -49,20 +49,20 @@
 }
 
 .kyoto-asahi {
-    .courseInfo {
+    /* .courseInfo {
         &:after {
             content:
-                "\a料金等、詳しくは>>コチラ"
+                "\a料金等、詳しくは>>コチラ<a>xxx</a>"
                 "\a日時は都合により変更の場合あります。"
                 "\a\a朝日カルチャーセンター京都"
                 "\aTel：075-231-9693";
             }
         }
-        white-space: pre-wrap;
+        white-space: pre-wrap; */
 
 }
 .kyoto-jeugia {
-    .courseInfo {
+    /* .courseInfo {
         &:after {
             content:
             "\a料金等、詳しくは>>コチラ"
@@ -73,7 +73,7 @@
             }
         }
         white-space: pre-wrap;
-        align-self: start;
+        align-self: start; */
 
 }
 
@@ -102,7 +102,7 @@
 }
 
 .fukui-newspaper {
-    .courseInfo{
+    /* .courseInfo{
         white-space: pre;
 
         &:after {
@@ -112,7 +112,7 @@
             "\a福井新聞文化センター"
             "\atel：0776-57-5200";
         }
-    }
+    } */
     
 }
 

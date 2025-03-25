@@ -60,6 +60,16 @@ section {
     padding-left: 1rem;
     line-height: 1.75em;
 }
+.courseLink {
+    padding-top: 4rem;
+    a {
+        color: black;
+        text-decoration: none;
+    }
+    & a:hover {
+        color: red;
+    }
+}
 .footer {
     color: white;
 }
