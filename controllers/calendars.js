@@ -72,7 +72,7 @@
             year: "2025",month: "4",cal_1: "cal-月",cal_2: "cal-1", arrDates: [14], note: ""
         },
         {
-            year: "2025",month: "5",cal_1: "cal-月",cal_2: "cal-2", arrDates: [19], note: "＊両日とも昼の部のみ"
+            year: "2025",month: "5",cal_1: "cal-月",cal_2: "cal-2", arrDates: [19], note: ""
         },
     
     ];
