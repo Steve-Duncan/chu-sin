@@ -12,7 +12,7 @@ exports.getTopics = (req,res,next)=> {
     console.log("url: " + req.url);
     let year;
     if(req.url==="/") {
-        year = "2025"
+        year = "2024"
     } else {
     // get url from params 
     year = req.url;
