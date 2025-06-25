@@ -34,13 +34,19 @@ exports.getTopics = (req,res,next)=> {
 exports.getTopicDetail = (req,res)=> {
     // get year for topics;
     let year = req.params.year;
+    console.log("year: " + year);
+    // get url from params 
+    // year = req.url;
+    console.log("url: " + req.url);
+    
+
     // get details page name
     let pageName = req.params.page;
     // build path to images for selected year
     let imgPath = '/images/topics/'+ year + '/';
     // build path to details page for selected year
     let page = 'partials/topics/'+ year + '/details/' + pageName;
-
+console.log("page: " + page);
     // send data to topics page
     res.render('layout', {
         page: page,
