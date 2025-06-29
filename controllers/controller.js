@@ -8,6 +8,7 @@ const path = require('path');
 let styles = {
     homePage: "styles-main",
     profilePage: "styles-profile",
+    courseFlowPage: "styles-courseflow",
     classPage: "styles-classes",
     topicsPage: "styles-topics",
     topicDetailsPage: "styles-topic-details",
@@ -34,6 +35,13 @@ exports.getClassesPage = (req,res)=>{
         page: 'partials/classes',
         style: styles.classPage,
         calendars: calendars});          
+}
+
+exports.getCourseFlowPage = (req,res)=>{
+    res.render('layout', {
+            page: 'partials/course_flow', 
+            style: styles.courseFlowPage,          
+        });
 }
 
 exports.getGalleryPage = (req,res,next)=>{

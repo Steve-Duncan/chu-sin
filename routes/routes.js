@@ -15,6 +15,9 @@ router.get("/profile",controller.getProfilePage);
 // GET classes page
 router.get("/classes",controller.getClassesPage);
 
+// GET course flow page
+router.get("/course_flow",controller.getCourseFlowPage);
+
 // GET gallery page
 router.get("/:medium",controller.getGalleryPage);
 
