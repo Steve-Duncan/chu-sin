@@ -81,7 +81,7 @@
       z-index: 3;
 
       &.open {
-        max-width: 85rem;
+        max-width: 95rem;
         margin-top:7rem;
         
       }
