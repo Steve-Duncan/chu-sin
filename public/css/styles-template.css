@@ -232,7 +232,7 @@
       }
     }
     nav li {
-       flex: 1 1 auto;
+       flex: 1 0 auto;
        border: none;
        background-color: var(--color-gray-dark);
        &:first-child {
