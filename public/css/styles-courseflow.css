@@ -5,6 +5,9 @@
     padding: 2rem .75rem  2rem 1rem;
     color: black;
     
+    & a, a:visited {
+        color: darkgoldenrod
+    }
 
 }
 
@@ -46,24 +49,24 @@ ul {
 }
 
 a {
-    color: black!important;
+    color: black;
     text-decoration: none;
     &:visited {
         color: black;
     }
 }
 
-    .pics {
-        margin-top: 3rem;
-        display: flex;
-        justify-content: start;
-        
-        & img {
-            width: 20rem;
+.pics {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: start;
+    
+    & img {
+        width: 20rem;
 
-        }            /* margin-top: 5rem; */
-            
-        }
+    }            /* margin-top: 5rem; */
+        
+}
     
 
 @media screen and (min-width: 720px) {
