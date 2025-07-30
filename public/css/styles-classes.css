@@ -41,8 +41,8 @@ section {
     font-size: 12px;
     font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
     h3 {
-        padding-top: 3.3rem;
-        padding-bottom:3rem;
+        /* padding-top: 3.3rem;
+        padding-bottom:3rem; */
         font-size: 1.6rem;
     }
     :nth-child(n+2) {

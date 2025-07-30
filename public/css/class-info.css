@@ -1,27 +1,18 @@
 
+.classroomInfo {
+    color: black;
+    white-space: pre-wrap;
+    font-size: 12px;
+    line-height: 2;
+    a, a:visited {
+        color: black;
+    }
 
+}
 .classroomInfo>h3:before {
     content:"教室案内";
     font-weight: bold;
     
-}
-.classroomInfo:after {
-    content: 
-    "\a京都教室・福井教室、どちらの教室でも、フルーツカービング／ソープカービングの両方を楽しんでいただけます。"
-    "\a 全ての教室にて体験受講随時受付中です。" 
-    "\a ＊朝日カルチャーセンター教室・JEUGIAカルチャー京都de Basic.・福井新聞文化センター教室につきましては、各教室へ直接お問い合わせください。"
-    "\a その他、出張講習、 ワークショップなど、詳しくはお気軽にお問い合わせ下さい。"
-    
-    "\a お問い合わせは佐藤朋子まで"
-    
-    "\a mail : sato@chu-sin.com"
-    
-    "\a tel : 075-606-5376"
-    
-    "\a ＊レッスンなどで電話対応が出来ないことが多いため、なるべくメールでのご連絡をお願いいたします。";
-    white-space: pre-wrap;
-    font-size: 12px;
-    line-height: 2;
 }
 
  
