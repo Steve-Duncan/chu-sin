@@ -56,7 +56,7 @@
             year: "2025",month: "8",cal_1: "cal-水",cal_2: "cal-1", arrDates: [6,20], note: "＊両日とも昼のみ"
         },
                 {
-            year: "2025",month: "9",cal_1: "cal-水",cal_2: "cal-2", arrDates: [3,17], note: "＊両日とも昼のみ"
+            year: "2025",month: "9",cal_1: "cal-水",cal_2: "cal-2", arrDates: [3,17], note: ""
         },
 
 
