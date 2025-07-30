@@ -360,7 +360,7 @@ section {
         grid-template-rows: repeat(3,33.33%);
     }
 
-    .location {
+    /* .location {
         display: grid;
         height: 5.5rem;
         grid-template-rows: repeat(2, auto-fit);
@@ -376,7 +376,7 @@ section {
             grid-row-start: 2;
             grid-column-start: 2;
         }
-    }
+    } */
 
     #cal-水 {
         padding-top: 1rem;
