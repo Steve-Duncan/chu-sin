@@ -8,7 +8,7 @@
             year: "2025",month: "10",cal_1: "cal-木",cal_2: "cal-1", arrDates: [16,30], note: "16日の昼の部のみウィングス京都"
         },
                 {
-            year: "2025",month: "11",cal_1: "cal-木",cal_2: "cal-2", arrDates: [13,27], note: "16日の昼の部のみウィングス京都"
+            year: "2025",month: "11",cal_1: "cal-木",cal_2: "cal-2", arrDates: [13,27], note: ""
         },
 
 
@@ -24,7 +24,7 @@
             year: "2025",month: "10",cal_1: "cal-土",cal_2: "cal-1", arrDates: [25], note: "＊ウィングス京都"
         },
                 {
-            year: "2025",month: "11",cal_1: "cal-土",cal_2: "cal-2", arrDates: [8,22], note: "＊ウィングス京都"
+            year: "2025",month: "11",cal_1: "cal-土",cal_2: "cal-2", arrDates: [8,22], note: "＊両日ともウィングス京都"
         },
 
 
