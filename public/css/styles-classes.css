@@ -230,7 +230,11 @@ section {
     
 
 }
+.kyoto-kita.venue {
+    margin-top:0;
+}
 .kyoto-kita {
+    
     grid-area: kita;
     grid-template-areas:
         "location location"
