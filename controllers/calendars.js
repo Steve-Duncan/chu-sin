@@ -5,10 +5,10 @@
         // data for Kyoto Kita
         
         {
-            year: "2025",month: "12",cal_1: "cal-木",cal_2: "cal-1", arrDates: [11,25], note: ""
+            year: "2025",month: "12",cal_1: "cal-木",cal_2: "cal-1", arrDates: [11,25], note: "＊25日 昼/夜ともウィングス京都"
         },
                 {
-            year: "2026",month: "1",cal_1: "cal-木",cal_2: "cal-2", arrDates: [15,29], note: "＊25日 昼/夜ともウィングス京都"
+            year: "2026",month: "1",cal_1: "cal-木",cal_2: "cal-2", arrDates: [15,29], note: ""
         },
 
         {
