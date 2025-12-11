@@ -192,9 +192,9 @@ iterate calendars data passed in from controller.js and
 call calendar function in classes.js to create calendars
 *********************************************************** -->
 <script>
-    <% calendars.forEach((calendar, index) => { %>
-        calendar(<%- calendar.year %>,<%- calendar.month %>,'<%= calendar.cal_1 %>','<%= calendar.cal_2 %>',[<%= calendar.arrDates %>],'<%= calendar.note %>');    
-    <% }); %>
+    '<% calendars.forEach((calendar, index) => { %>'
+        calendar('<%- calendar.year %>','<%- calendar.month %>','<%= calendar.cal_1 %>','<%= calendar.cal_2 %>',['<%= calendar.arrDates %>'],'<%= calendar.note %>');    
+    '<% }); %>'
 </script
 
 
