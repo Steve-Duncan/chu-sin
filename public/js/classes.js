@@ -1,4 +1,3 @@
-// this function is called from classes.ejs
 function calendar(year, month, targetDiv, calNum, arrClassDates, note) {
   // get calendar number - 1/2 for L/R
   calNum=calNum.slice(-1);
