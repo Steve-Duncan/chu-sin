@@ -69,6 +69,7 @@ section {
     & a:hover {
         color: red;
     }
+    white-space: pre;
 }
 .footer {
     color: white;
