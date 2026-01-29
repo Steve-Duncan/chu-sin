@@ -24,7 +24,7 @@
             year: "2026",month: "2",cal_1: "cal-土",cal_2: "cal-1", arrDates: [14,28], note: "＊両日ともウィングス京都"
         },
         {
-            year: "2026",month: "3",cal_1: "cal-土",cal_2: "cal-2", arrDates: [14,28], note: "＊両日ともウィングス京都"
+            year: "2026",month: "3",cal_1: "cal-土",cal_2: "cal-2", arrDates: [14,28], note: ""
         },
 
 
