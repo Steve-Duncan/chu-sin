@@ -447,8 +447,13 @@ section {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        padding-top: 1;
+        padding-top: 11;
         padding-bottom: 2rem;
+
+        font-size: 11px
+    }
+    .venue {
+        font-size: 11px;
     }
     .venue .grid-wrap {
         justify-content: start;
@@ -461,6 +466,10 @@ section {
         "cal-Thu cal-Thu info"
         "cal-Fri cal-Fri ."
         "cal-Sat cal-Sat .";
+
+        #cal-木 {
+        padding-top: 1rem;
+    }
     }
     .kyoto-asahi {
         grid-template-areas:
@@ -486,6 +495,8 @@ section {
         grid-template-areas:
         "location location location"
         "cal-Mon cal-Mon info";
-    }       
+    } 
+    
+    
 }
 
