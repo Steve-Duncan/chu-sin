@@ -2,7 +2,7 @@
 .classroomInfo {
     color: black;
     white-space: pre-line;
-    font-size: 12px;
+    font-size: 1.1rem;
     line-height: 2;
     a, a:visited {
         color: black;
