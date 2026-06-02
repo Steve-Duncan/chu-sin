@@ -22,7 +22,7 @@
             year: "2026",month: "6",cal_1: "cal-土",cal_2: "cal-1", arrDates: [13,27], note: ""
         },
         {
-            year: "2026",month: "7",cal_1: "cal-土",cal_2: "cal-2", arrDates: [11,25], note: "25日ウィングス京都 土曜午前クラス 25日"
+            year: "2026",month: "7",cal_1: "cal-土",cal_2: "cal-2", arrDates: [11,25], note: "25日ウィングス京都"
         },
 
 
