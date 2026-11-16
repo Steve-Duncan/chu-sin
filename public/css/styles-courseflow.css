@@ -49,6 +49,10 @@ ul {
     }
 
 }
+.notfirstli :first-child {
+    list-style-type: none;
+    text-indent: -2em;
+}
 
 a {
     color: black;
